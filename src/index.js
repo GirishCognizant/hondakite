@@ -1,13 +1,48 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import FuelUp from './components/FuelUp/Fuelup';
+import Index2 from "../src/components/LandingPage/Index2"
+// import ActDashBoard from './components/Dashboard/ActDashBoard';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <FuelUp />,
+  },
+  {
+    path: "/",
+    element: <Index2 />,
+  },
+  {
+    path: "/Drivein",
+    element: <FuelUp /> // replace with actual component
+  },
+  {
+    path: "/HomeBootcamp",
+    element: <FuelUp /> // replace with actual component
+  },
+  // {
+  //   path: "/ActDashBoard", 
+  //   element: <ActDashBoard /> // replace with actual component
+  // },
+  {
+    path: "/FuelUp",
+    element: <FuelUp /> // replace with actual component
+  },
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

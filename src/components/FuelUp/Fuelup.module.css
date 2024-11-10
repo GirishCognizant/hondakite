@@ -1,0 +1,14 @@
+.item {
+  margin: 0 15px 60px;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  /* overflow: hidden; */
+  /* position: relative; */
+  /* transition: all 0.4s ease-in-out; */
+  /* cursor: pointer; */
+  /* flex-shrink: 0; */
+}
